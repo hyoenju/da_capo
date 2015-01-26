@@ -11,6 +11,7 @@
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
     <link rel="stylesheet" href="/resources/demos/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script>
         $(function() {
             var availableTags = [
@@ -125,10 +126,21 @@
 </head>
 <body>
 
-<header>
-    <h2> 이용안내 | 로그인 | 예약확인/예약취소 </h2>
-    <h1> 강의실 예약 시스템 </h1>
-</header>
+<nav class="navbar navbar-default">
+    <div class="navbar-header">
+        <a class="navbar-brand">reservation</a>
+    </div>
+    <div class="container-fluid">
+        <div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-home"></span>&nbsp;이용안내</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;로그아웃</a></li>
+                <li><a href="http://localhost:63342/da_capo/Checking_Reservation_of_student.html">
+                    <span class="glyphicon glyphicon-book"></span>&nbsp;예약확인/예약취소&nbsp;</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 <div>
 
     <ul><li>세 부 사 항 입 력</li></ul><br>
