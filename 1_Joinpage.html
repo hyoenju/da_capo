@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>sign up</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<style>
+    h1 {
+        text-align: center;
+        margin: auto;
+        height: 50px;
+    }
+    h2 {
+        font-size: 100%;
+        background-color: #e6eaaa;
+        text-align: right;
+        margin: auto;
+        padding: 5px;
+    }
+    form{
+        text-align: right;
+        margin : auto;
+        font-size : 150%;
+        position : relative;
+        right : 500px;
+    }
+    footer{
+        font-size: 80%;
+        background-color: #e6eaaa;
+        text-align: right;
+        margin: auto;
+        padding: 5px;
+        position: relative;
+        height: 15px;
+    }
+    .btn{
+        background-color: #ff8868;
+        width:30%
+        text-align:center;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2> 이용안내 | 로그인 | 예약확인/예약취소 </h2>
+    <h1> 회 원 가 입 </h1>
+</header>
+
+<form action="cgi-bin/formsample.cgi" method="post">
+    <p> I D : <input type="text" name="userid" id="userid" required></p>
+    <p> 이름 : <input type="text" name="username" id="username" required> </p>
+    <p> email : <input type="email" name="useremail" id="useremail" required></p>
+    <p> 비밀번호 : <input type="password" name="userpasswd" id="userpasswd "required> </p>
+    <p> 비밀번호 확인 : <input type="password" name="checkpasswd" id="checkpasswd" required> </p>
+</form>
+
+<div class="container" align="center">
+    <button type="button" class="btn btn-danger"><a href="2_Joinpage.html"> 회 원 가 입</a></button>
+</div>
+
+<footer>Copyright (c) 2015 da_capo </footer>
+
+</body>
+</html>

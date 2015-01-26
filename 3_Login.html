@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0; }
+    header {
+        height: 100px;
+        position: relative;
+        z-index: 1; }
+    h1 {
+        text-align: center;
+        margin: auto;
+        height: 50px;
+    }
+    h2 {
+        font-size: 100%;
+        background-color: #e6eaaa;
+        text-align: right;
+        margin: auto;
+        padding: 5px;
+    }
+    form{
+        text-align: right;
+        margin : auto;
+        font-size : 150%;
+        position : relative;
+        right : 500px;
+    }
+    footer{
+        font-size: 80%;
+        background-color: #e6eaaa;
+        text-align: right;
+        margin: auto;
+        padding: 5px;
+        position: relative;
+        height: 15px;
+
+    }
+    .btn{
+        background-color: #ff8868;
+        width:30%
+        text-align:center;
+    }
+
+    #main{
+       min-height: 80%;}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2> 이용안내 | 로그인 | 예약확인/예약취소 </h2>
+    <h1> 회 원 가 입 </h1>
+</header>
+
+<div id="main">
+
+    <form action="cgi-bin/formsample.cgi" method="post">
+        <p> I D : <input type="text" name="userid" id="userid" required  placeholder="아이디를 입력하세요"> </p>
+        <p> 비밀번호 : <input type="password" name="userpasswd" id="userpasswd" required></p>
+    </form>
+
+    <div class="container" align="center">
+        <button type="button" class="btn btn-danger"> 비 밀 번 호 찾 기 > </button>
+        <button type="button" class="btn btn-danger"> 로 그 인 </button>
+        <button type="button" class="btn btn-danger"> 회 원 가 입 </button>
+    </div>
+</div>
+
+<footer>Copyright (c) 2015 da_capo </footer>
+
+</body>
+</html>

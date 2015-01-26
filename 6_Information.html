@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>reservation_information</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <style>
+     #main{
+         -moz-column-count: 2;
+         -webkit-column-count: 2;
+         column-count: 2;
+         width: 1000px;
+         height: 80%;
+         margin: 40px auto;
+         vertical-align:middle;
+     }
+     header{height:100px;  }
+     h1 {
+        text-align: center;
+        margin: auto;
+        height: 50px;
+        padding: 10px;
+        font-family: Impact, sans-serif;
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 100%;
+        background-color: #e6eaaa;
+        text-align: right;
+        margin: auto;
+        padding: 5px;
+    }
+     footer{
+         font-size: 80%;
+         background-color: #e6eaaa;
+         text-align: right;
+         margin: auto;
+         padding: 5px;
+         position: relative;
+         height: 25px;
+     }
+    .btn{
+        background-color: #ff8868;
+        width:30%;
+        text-align:center
+    ;
+    }
+    h3{
+        margin-top: 0;
+        padding: 5px;
+        background-color: #f8ffff;
+    }
+    article{
+        position:static;
+        vertical-align:middle;
+    }
+     #break{
+        -webkit-column-break-before: always;
+        break-before: column;}
+
+     .container{
+         position:relative;
+     }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2> 이용안내 | 로그인 | 예약확인/예약취소 </h2>
+    <h1> 강의실 예약 시스템 </h1>
+</header>
+
+<div id="main">
+    <h3 id="break"> 이 용 안 내</h3>
+    <alticle>
+        <b>이용 가능 대상</b> : 산업경영공학과 학생<br>
+        <b>이용 가능 강의실</b> : 504호 - 개인 과제 및 쉴 공간
+                        (최대 30명 이용 가능, 좌석은 RANDOM)<br>
+                        519호 - 팀 별 프로젝트 (3~8명)<br>
+        <b>이용 가능 시간</b> : 09:00 ~ 18:00 (학기 중 평일만 이용 가능)<br>
+        <b>이용 방법<b> : 하루 한시간 단위로 최대 두시간 예약 가능<br>
+                  하루 전까지 예약, 예약한 시간의 한시간 전까지 예약 취소 가능<br>
+                  예약은 한 날짜의 한 번만 가능<br>
+    </alticle>
+
+    <h3 id="break"> 유 의 사 항</h3>
+    <alticle>
+        경고 3회 누적시 평생 사용 불가 <br>
+        (경고 예시 : 인원 숫자 불일치, 강의실 더럽게 사용)<br>
+        교수님께서 519호 사용할 시 교수님 우선 사용, 사용자는 예약 취소될 수 있음.<br>
+        다음 사람이 청결한 상태에서 사용할 수 있게 깔끔하게 사용해주세요.<br>
+        옆 방은 교수님 방 입니다. 시끄럽지 않게 사용해주세요.<br>
+    </alticle>
+</div>
+
+<div class="container" align="center">
+    <button type="button" class="btn btn-danger"> 예 약 시 작 </button>
+</div>
+
+<span>
+    <footer>Copyright (c) 2015 da_capo </footer>
+</span>
+</body>
+</html>

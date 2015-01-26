@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>reserve information</title>
+    <title>sign up</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script>
+        $(function() {
+            var availableTags = [
+                "ActionScript",
+                "AppleScript",
+                "Asp",
+                "BASIC",
+                "C",
+                "C++",
+                "Clojure",
+                "COBOL",
+                "ColdFusion",
+                "Erlang",
+                "Fortran",
+                "Groovy",
+                "Haskell",
+                "Java",
+                "JavaScript",
+                "Lisp",
+                "Perl",
+                "PHP",
+                "Python",
+                "Ruby",
+                "Scala",
+                "Scheme"
+            ];
+            function split( val ) {
+                return val.split( /,\s*/ );
+            }
+            function extractLast( term ) {
+                return split( term ).pop();
+            }
+
+            $( "#tags" )
+                // don't navigate away from the field on tab when selecting an item
+                    .bind( "keydown", function( event ) {
+                        if ( event.keyCode === $.ui.keyCode.TAB &&
+                                $( this ).autocomplete( "instance" ).menu.active ) {
+                            event.preventDefault();
+                        }
+                    })
+                    .autocomplete({
+                        minLength: 0,
+                        source: function( request, response ) {
+                            // delegate back to autocomplete, but extract the last term
+                            response( $.ui.autocomplete.filter(
+                                    availableTags, extractLast( request.term ) ) );
+                        },
+                        focus: function() {
+                            // prevent value inserted on focus
+                            return false;
+                        },
+                        select: function( event, ui ) {
+                            var terms = split( this.value );
+                            // remove the current input
+                            terms.pop();
+                            // add the selected item
+                            terms.push( ui.item.value );
+                            // add placeholder to get the comma-and-space at the end
+                            terms.push( "" );
+                            this.value = terms.join( ", " );
+                            return false;
+                        }
+                    });
+        });
+    </script>
+    <style>
+        header{height:100px;}
+        h1 {
+            text-align: center;
+            margin: auto;
+            height: 50px;
+            padding: 10px;
+            font-family: Impact, sans-serif;
+            font-size: 40px;
+        }
+        h2 {
+            font-size: 100%;
+            background-color: #e6eaaa;
+            text-align: right;
+            margin: auto;
+            padding: 5px;
+        }
+        li{
+            font-size:25px;
+        }
+        div{
+            font-size: 20px;
+            padding-top: 50px;
+            padding-left: 500px;
+            padding-bottom: 50px;
+            vertical-align:middle;
+        }
+        footer{
+            font-size: 80%;
+            background-color: #e6eaaa;
+            text-align: right;
+            margin: auto;
+            padding: 5px;
+            position: relative;
+            height: 25px;
+        }
+        p{
+            text-align: left;
+        }
+        .btn{
+            background-color: #ff8868;
+            width:20%;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h2> 이용안내 | 로그인 | 예약확인/예약취소 </h2>
+    <h1> 강의실 예약 시스템 </h1>
+</header>
+<div>
+
+    <ul><li>세 부 사 항 입 력</li></ul><br>
+    <p>예약자 학번 :  201433298 (아이디)</p>
+    <p>예약자 이름 : 이 현 주</p>
+    <p>예약 시간 : 13 : 00 ~ 15 : 00</p>
+    <form action="cgi-bin/formsample.cgi" method="post">
+        <p class="ui-widget">
+            <label for="tags">동반 사용자 : </label>
+            <input id="tags" size="50">
+        </p>
+        <p>사용 목적 :
+            <select>
+                <option value="study">스터디</option>
+                <option value="project">조별과제</option>
+                <option value="conference">과 회의</option>
+                <option value="other">기타</option>
+            </select>
+            <input type="text" name="reason" id="reason" placeholder="기타 사유를 입력하세요"></p>
+    </form>
+</div>
+<div class="container" align="center">
+    <button type="button" class="btn btn-danger"><a href="index.html"> 예 약 완 료 ></a></button>
+</div>
+<footer>Copyright (c) 2015 da_capo </footer>
+</body>
+
+</html>
