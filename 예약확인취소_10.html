@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <title>Checking_Reservation_of_student</title>
+    <style>
+        .navbar{
+            background-color: #e6eaaa;
+            font-size: auto;
+        }
+        table{
+            font-size : 18px;
+            width: 85%;
+            border-collapse: collapse;
+        }
+        table,th,td{
+            border: 1px solid grey;
+            padding: 10px;
+            text-align: center;
+        }
+        th{
+            background-color : #f8ffff;
+            font-weight: bold;
+        }
+        h2,p{
+            text-align :center;
+            font-weight: bold;
+        }
+        .btn{
+            background-color: #ff8868;
+            width:10%;
+            font-size: 18px;
+            font-weight: bold;
+            height:auto;
+            text-align:center;
+        }
+        footer{
+            font-size: 80%;
+            background-color: #e6eaaa;
+            text-align: right;
+            margin: auto;
+            padding: 10px;
+        }
+        .divider{
+            width: 300px;
+            height: auto;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body onhashchange="myFunction()">
+
+<nav class="navbar navbar-default">
+    <div class="navbar-header">
+        <a class="navbar-brand">Checking Reservation</a>
+    </div>
+    <div class="container-fluid">
+        <div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;로그아웃&nbsp;</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<span style="line-height: 10px"><br></span>
+<table align="center">
+    <tr>
+        <th>강의실</th>
+        <td>519호</td>
+    </tr>
+    <tr>
+        <th>예약자학번</th>
+        <td>201433298</td>
+    </tr>
+    <tr>
+        <th>예약자이름</th>
+        <td>이현주</td>
+    </tr>
+    <tr>
+        <th>동반사용자</th>
+        <td>201433272 서예지<br>201433289 홍길동</td>
+    </tr>
+    <tr>
+        <th>예약시간</th>
+        <td>13:00~15:00</td>
+    </tr>
+    <tr>
+        <th>사용목적</th>
+        <td>프로그램 입문 수업 발표 회의</td>
+    </tr>
+    <tr>
+        <th>승인상태</th>
+        <td><a onclick="changePart()" style="color: red">취소</a></td>
+    </tr>
+</table>
+
+<br>
+<p>승인상태가 취소 인 경우, 취소를 클릭하시면 이유를 확인 할 수 있습니다</p>
+<span style="line-height: 100px"><br></span>
+
+<div class="container" align="center">
+    <button type="button" class="btn btn-danger" onclick="self.close()">예약확인</button>
+    <div class="divider"></div>
+    <a class="btn btn-danger" href="http://localhost:63342/da_capo/Reservationcancel.html" role="button">예약취소</a>
+</div>
+
+<span style="line-height: 20px"><br></span>
+<footer>Copyright (c) 2015 da_capo </footer>
+
+<p id="demo"></p>
+
+<script>
+    function changePart() {
+        location.href="예약취소_12.html"
+    }
+</script>
+</body>
+</html>

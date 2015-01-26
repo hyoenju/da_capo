@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <title></title>
+    <style>
+        .navbar{
+            background-color: #e6eaaa;
+            font-size: auto;
+        }
+        table{
+            font-size : 18px;
+            width: 85%;
+            border-collapse: collapse;
+        }
+        table,th,td{
+            border: 1px solid grey;
+            padding: 10px;
+            text-align: center;
+            width: 900px;
+        }
+
+        th{
+            background-color : #f8ffff;
+            font-weight: bold;
+            width: 700px;
+        }
+        h2{
+            text-align :center;
+            font-weight: bold;
+        }
+        .btn{
+            background-color: #ff8868;
+            width:20%;
+            font-size: 18px;
+            font-weight: bold;
+            height:auto;
+            text-align:center;
+        }
+        footer{
+            font-size: 80%;
+            background-color: #e6eaaa;
+            text-align: right;
+            margin: auto;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="navbar-header">
+        <a class="navbar-brand">CancelReason</a>
+    </div>
+    <div class="container-fluid">
+        <div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;로그아웃&nbsp;</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<span style="line-height: 200px"><br></span>
+<table align="center">
+    <tr>
+        <th>승인상태</th>
+        <td>취소</td>
+    </tr>
+    <tr>
+        <th>승인이유</th>
+        <td>예약하신 시간에 세미나가 진행됩니다.</td>
+    </tr>
+</table>
+
+<span style="line-height: 200px"><br></span>
+<div class="container" align="center">
+    <button type="button" class="btn btn-danger" onclick="self.close()">확인</button>
+</div>
+
+<span style="line-height: 50px"><br></span>
+<footer>Copyright (c) 2015 da_capo </footer>
+
+</body>
+</html>

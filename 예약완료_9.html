@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <title>information_of_reservation</title>
+    <style>
+        .navbar{
+            background-color: #e6eaaa;
+            font-size: auto;
+        }
+        .navbar-right{
+            font-color:white ;
+        }
+        table{
+            font-size : 18px;
+            width: 85%;
+            border-collapse: collapse;
+        }
+        table,th,td{
+            border: 1px solid grey;
+            padding: 10px;
+            text-align: center;
+        }
+        th{
+            background-color : #f8ffff;
+            font-weight: bold;
+        }
+        h2,h3{
+            text-align :center;
+            font-weight: bold;
+        }
+        p{
+            text-align: center;
+        }
+        .btn{
+            background-color: #ff8868;
+            width:20%;
+            font-size: 18px;
+            font-weight: bold;
+            height:auto;
+            text-align:center;
+        }
+        footer{
+            font-size: 80%;
+            background-color: #e6eaaa;
+            text-align: right;
+            margin: auto;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="navbar-header">
+        <a class="navbar-brand">Information Reservation</a>
+    </div>
+    <div class="container-fluid">
+        <div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;로그아웃&nbsp;</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<span style="line-height: 10px"><br></span>
+
+<table align="center">
+    <tr>
+        <th>강의실</th>
+        <td>519호</td>
+    </tr>
+    <tr>
+        <th>예약자학번</th>
+        <td>201433298</td>
+    </tr>
+    <tr>
+        <th>예약자이름</th>
+        <td>이현주</td>
+    </tr>
+    <tr>
+        <th>동반사용자</th>
+        <td>201433272 서예지<br>201433289 홍길동</td>
+    </tr>
+    <tr>
+        <th>예약시간</th>
+        <td>13:00~15:00</td>
+    </tr>
+    <tr>
+        <th>사용목적</th>
+        <td>프로그램 입문 수업 발표 회의</td>
+    </tr>
+    <tr>
+        <th>사용승인</th>
+        <td>대기</td>
+    </tr>
+</table>
+
+<span style="line-height: 10px"><br></span>
+<h3>예약이완료되었습니다</h3>
+<p>강의실을 사용하기 전, 승인확인이 되었는지 확인 한 후 사용해 주시길 바랍니다.</p>
+
+<span style="line-height: 10px"><br></span>
+<div class="container" align="center">
+    <button type="button" class="btn btn-danger">초기화면으로 돌아가기</button>
+</div>
+
+<span style="line-height: 40px"><br></span>
+<footer>Copyright (c) 2015 da_capo </footer>
+
+</body>
+</html>

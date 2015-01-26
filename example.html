@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <script>
+    window.onload = downScripts;
+
+    function downScripts() {
+        var element = document.createElement("script");
+        element.src = "myScript.js";
+        document.body.appendChild(element);
+    }
+</script>
+</head>
+<body>
+
+<input type="button" value="Load new document" onclick="newDoc()">
+
+</body>
+</html>

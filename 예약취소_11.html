@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+    <title>Reservation cancel</title>
+    <style>
+        .navbar{
+            background-color: #e6eaaa;
+            font-size: auto;
+        }
+        .navbar-right{
+            font-color:white ;
+        }
+        h2,h3{
+            text-align :center;
+            font-weight: bold;
+        }
+        em{
+            color: red;
+            font-weight: bold;
+        }
+        .btn{
+            background-color: #ff8868;
+            width:10%;
+            font-size: 18px;
+            font-weight: bold;
+            height:auto;
+            text-align:center;
+        }
+        footer{
+            font-size: 80%;
+            background-color: #e6eaaa;
+            text-align: right;
+            margin: auto;
+            padding: 10px;
+        }
+        .divider{
+            width: 300px;
+            height: auto;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="navbar-header">
+        <a class="navbar-brand">Reservation</a>
+    </div>
+    <div class="container-fluid">
+        <div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-home"></span>&nbsp;이용안내</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;로그아웃</a></li>
+                <li><a href="http://localhost:63342/da_capo/Checking_Reservation_of_student.html">
+                    <span class="glyphicon glyphicon-book"></span>&nbsp;예약확인/예약취소&nbsp;</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<br>
+
+<span style="line-height: 150px"><br></span>
+<h2>예약을 취소하시겠습니까?</h2>
+<span style="line-height: 150px"><br></span>
+
+<div class="container" align="center">
+    <button type="button" class="btn btn-danger" >예</button>
+    <div class="divider"></div>
+    <a class="btn btn-danger" href="http://localhost:63342/da_capo/Checking_Reservation_of_student.html" role="button">뒤로가기</a>
+</div>
+
+
+<span style="line-height: 150px"><br></span>
+<footer>Copyright (c) 2015 da_capo </footer>
+
+</body>
+</html>
