@@ -2,28 +2,32 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        function showmap() {
+            if(document.all.spot.style.visibility=="hidden") {
+                document.all.spot.style.visibility="visible";
+                return false;
+            }
+            if(document.all.spot.style.visibility=="visible") {
+                document.all.spot.style.visibility="hidden";
+                return false;
+            }
+        }
+    </script>
     <title>519_timetable</title>
 
     <style>
-        h1 {
-            text-align: center;
-            margin: auto;
-            height: 50px;
-            padding: 10px;
-            font-family: Impact, sans-serif;
-            font-size: 50px;
-        }
-        h2 {
-            font-size: 100%;
+        .navbar {
             background-color: #e6eaaa;
-            text-align: right;
-            margin: auto;
-            padding: 5px;
         }
         #container{
             margin: auto;
-            width:100%;
-            height: 100%;
+            width: 85%;
+            height: 70%;
             display: -moz-box;
             display: -ms-flexbox;
             display: -webkit-box;
@@ -37,12 +41,14 @@
             -webkit-flex-direction: row-reverse;
             flex-direction: row-reverse;
         }
-        ul {
+        #room{
             list-style-type: none;
             margin: 0;
             padding: 0;
             display: left;
+            font-size: 18px;
         }
+        /*
         a:link, a:visited {
             display: block;
             font-weight: bold;
@@ -54,26 +60,26 @@
             text-decoration: none;
             text-transform: uppercase;
         }
-
+        */
         a:hover, a:active {
-            background-color: rgba(102, 191, 129, 0.42);
+            background-color: #f8ffff;
         }
         table{
             font-size : 18px;
-            width:100%;
             border-collapse: collapse;
         }
         table,th,td{
-            border: 1px solid grey;
+            border: 1px solid lavenderblush;
             padding: 10px;
             text-align: center;
         }
         th{
-            background-color : #d093ff;
+            background-color : #f8ffff;
             font-weight: bold;
         }
         colgroup{
-            background-color : rgba(208, 147, 255, 0.75);
+            width:20%;
+            background-color : #f8ffff;
             font-weight: bold;
         }
         footer{
@@ -90,30 +96,46 @@
         }
         .btn{
             background-color: #ff8868;
-            width:20%;
-            text-align:center;
+            width:20%
+        text-align:center;
+        }
+        .divider{
+            padding:15px;
+            background-color: #FFFFFF;
         }
     </style>
 </head>
 
 <body>
+<nav class="navbar navbar-default">
+    <div class="navbar-header">
+        <a class="navbar-brand">519_timetable</a>
+    </div>
+    <div class="container-fluid">
+        <div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-home"></span>이용안내</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span>로그아웃</a></li>
+                <li><a href="http://localhost:63342/da_capo/Checking_Reservation_of_student.html">
+                    <span class="glyphicon glyphicon-book"></span>예약확인/예약취소</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-<header>
-    <h2> 이용안내 | 로그인 | 예약확인/예약취소 </h2>
-    <h1> 강의실 예약 시스템 </h1>
-</header>
-
+<span style="line-height: 10px"><br></span>
 <div id="container">
-
-    <ul>
-        <li><a href="7_504table.html"><br>5<br>1<br>9<br>호<br> <br></a></li>
-        <li><a href="7_519table.html"><br>5<br>0<br>4<br>호<br> <br></a></li>
+    <ul id="room" style="background-color: lavenderblush; width: 50px; height: 360px; text-align: center;">
+        <div class="divider"></div>
+        <li><a href="7_504table.html" style="color:palevioletred;"><br>5<br>1<br>9<br>호<br><br></a></li>
+        <div class="divider"></div>
+        <li><a href="7_519table.html" style="color:palevioletred;"><br>5<br>0<br>4<br>호</a></li>
     </ul>
     <table class = table>
         <thead>
-        <tr><th>519호</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th></tr>
+        <tr><th>519</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th></tr>
         </thead>
-        <tbody>
+        <tbody >
         <colgroup span="1" class="time"></colgroup>
         <tr><td>09:00~10:00</td><td></td><td></td><td></td><td></td><td></td></tr>
         <tr><td>10:00~11:00</td><td></td><td></td><td></td><td></td><td></td></tr>
@@ -131,6 +153,11 @@
         </tbody>
     </table>
 </div>
-<footer>Copyright (c) 2015 da_capo </footer>
+
+<div class="container" align="center">
+    <button type="button" class="btn btn-danger"><a href="8_Studentmember.html">   예 약 완 료  > </a></button>
+</div>
+<footer>Copyright (c) 2015 da_capo</footer>
 </body>
+
 </html>
