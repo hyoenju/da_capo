@@ -3,10 +3,10 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>reservation_information</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
     <style>
      #main{
          -moz-column-count: 2;
@@ -18,21 +18,7 @@
          vertical-align:middle;
      }
      header{height:100px;  }
-     h1 {
-        text-align: center;
-        margin: auto;
-        height: 50px;
-        padding: 10px;
-        font-family: Impact, sans-serif;
-        font-size: 50px;
-    }
-    h2 {
-        font-size: 100%;
-        background-color: #e6eaaa;
-        text-align: right;
-        margin: auto;
-        padding: 5px;
-    }
+
      footer{
          font-size: 80%;
          background-color: #e6eaaa;
@@ -64,15 +50,30 @@
      .container{
          position:relative;
      }
+     .navbar{
+          background-color: #e6eaaa;
+          font-size: auto;
+      }
 </style>
 </head>
 
 <body>
 
-<header>
-    <h2> 이용안내 | 로그인 | 예약확인/예약취소 </h2>
-    <h1> 강의실 예약 시스템 </h1>
-</header>
+<nav class="navbar navbar-default">
+    <div class="navbar-header">
+        <a class="navbar-brand">강의실 예약 시스템</a>
+    </div>
+    <div class="container-fluid">
+        <div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-home"></span>&nbsp;이용안내</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;로그아웃</a></li>
+                <li><a href="http://localhost:63342/da_capo/Checking_Reservation_of_student.html">
+                    <span class="glyphicon glyphicon-book"></span>&nbsp;예약확인/예약취소&nbsp;</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
 <div id="main">
     <h3 id="break"> 이 용 안 내</h3>
@@ -98,7 +99,7 @@
 </div>
 
 <div class="container" align="center">
-    <button type="button" class="btn btn-danger"> 예 약 시 작 </button>
+    <button type="button" class="btn btn-danger"> <a href="7_504table.html"> 예 약 시 작 </a></button>
 </div>
 
 <span>
