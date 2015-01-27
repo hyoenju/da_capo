@@ -15,28 +15,28 @@
     <script>
         $(function() {
             var availableTags = [
-                "ActionScript",
-                "AppleScript",
-                "Asp",
-                "BASIC",
-                "C",
-                "C++",
-                "Clojure",
-                "COBOL",
-                "ColdFusion",
-                "Erlang",
-                "Fortran",
-                "Groovy",
-                "Haskell",
-                "Java",
-                "JavaScript",
-                "Lisp",
-                "Perl",
-                "PHP",
-                "Python",
-                "Ruby",
-                "Scala",
-                "Scheme"
+                "201433228 ㅇㅇㅇ",
+                "201433282 ㄱㄱㄱ",
+                "201543284 ㄴㄴㄴ",
+                "201512532 ㄷㄷㄷ",
+                "201235342 ㄹㄹㄹ",
+                "201542321 ㅁㅁㅁ",
+                "201234321 ㅂㅂㅂ",
+                "201123457 ㅅㅅㅅ",
+                "201043564 ㅈㅈㅈ",
+                "203153123 ㅊㅊㅊ",
+                "201928423 ㅋㅋㅋ",
+                "200981723 ㅌㅌㅌ",
+                "203948534 ㅍㅍㅍ",
+                "201119283 ㅎㅎㅎ",
+                "201938534 ㅏㅏㅏ",
+                "202273232 ㅑㅑㅑ",
+                "201236423 ㅓㅓㅓ",
+                "201847443 ㅕㅕㅕ",
+                "201351232 ㅗㅗㅗ",
+                "203124262 ㅛㅛㅛ",
+                "201928274 ㅜㅜㅜ",
+                "201483723 ㅠㅠㅠ"
             ];
             function split( val ) {
                 return val.split( /,\s*/ );
@@ -80,29 +80,16 @@
     </script>
     <style>
         header{height:100px;}
-        h1 {
-            text-align: center;
-            margin: auto;
-            height: 50px;
-            padding: 10px;
-            font-family: Impact, sans-serif;
-            font-size: 40px;
-        }
-        h2 {
-            font-size: 100%;
+        .navbar {
             background-color: #e6eaaa;
-            text-align: right;
-            margin: auto;
-            padding: 5px;
+            font-size: auto;
         }
-        li{
-            font-size:25px;
-        }
-        div{
+
+        #main{
             font-size: 20px;
-            padding-top: 50px;
+            padding-top: 100px;
             padding-left: 500px;
-            padding-bottom: 50px;
+            padding-bottom: 150px;
             vertical-align:middle;
         }
         footer{
@@ -113,14 +100,20 @@
             padding: 5px;
             position: relative;
             height: 25px;
+
         }
         p{
             text-align: left;
+            font-size: 18px;
+            font-weight: bold;
         }
         .btn{
             background-color: #ff8868;
             width:20%;
             text-align:center;
+        }
+        #icon_color{
+            color: orange;
         }
     </style>
 </head>
@@ -128,27 +121,29 @@
 
 <nav class="navbar navbar-default">
     <div class="navbar-header">
-        <a class="navbar-brand">reservation</a>
+        <a class="navbar-brand" id="link3">Reservation</a>
     </div>
     <div class="container-fluid">
         <div>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-home"></span>&nbsp;이용안내</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;로그아웃</a></li>
-                <li><a href="http://localhost:63342/da_capo/Checking_Reservation_of_student.html">
-                    <span class="glyphicon glyphicon-book"></span>&nbsp;예약확인/예약취소&nbsp;</a></li>
+                <li><a href="6_Information.html"><span class="glyphicon glyphicon-home" id="icon_color"></span>&nbsp;이용안내</a></li>
+                <li><a href="3_Login.html"><span class="glyphicon glyphicon-off"id="icon_color"></span>&nbsp;로그인</a></li>
+                <li><a href="10_Selectreservation.html">
+                    <span class="glyphicon glyphicon-book" id="icon_color"></span>&nbsp;예약확인/예약취소&nbsp;</a></li>
             </ul>
         </div>
     </div>
 </nav>
-<div>
 
-    <ul><li>세 부 사 항 입 력</li></ul><br>
+
+<div id="main">
+
+    <ul><li style="font-weight: bold; font-size: 25px;">세 부 사 항 입 력</li></ul><br>
     <p>예약자 학번 :  201433298 (아이디)</p>
     <p>예약자 이름 : 이 현 주</p>
     <p>예약 시간 : 13 : 00 ~ 15 : 00</p>
-    <form action="cgi-bin/formsample.cgi" method="post">
-        <p class="ui-widget">
+    <form action="cgi-bin/formsample.cgi" method="post" style="font-size: medium">
+        <p class="ui-widget" style="width:50%">
             <label for="tags">동반 사용자 : </label>
             <input id="tags" size="50">
         </p>
@@ -163,9 +158,12 @@
     </form>
 </div>
 <div class="container" align="center">
-    <button type="button" class="btn btn-danger"><a href="index.html"> 예 약 완 료 ></a></button>
+    <button type="button" class="btn btn-danger"><a href="9_Finish.html"> 예 약 완 료 ></a></button>
 </div>
-<footer>Copyright (c) 2015 da_capo </footer>
+<footer id="footer">
+    <div class="pull-left" >&nbsp;&nbsp;가천대학교 산업경영공학과</div>
+    <div class="pull-right">Copyright (c) da_capo&nbsp;&nbsp;</div>
+</footer>
 </body>
 
 </html>

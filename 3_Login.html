@@ -11,6 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <style>
+
     html, body {
         height: 100%;
         margin: 0;
@@ -35,7 +36,7 @@
         margin: auto;
         padding: 5px;
         position: relative;
-        height: 15px;
+        height: 25px;
 
     }
     .btn{
@@ -45,7 +46,10 @@
     }
 
     #main{
-       min-height: 80%;}
+        min-height: 85%;
+        padding-top: 12%;
+
+    }
     .navbar {
         background-color: #e6eaaa;
         font-size: auto;
@@ -55,6 +59,10 @@
         height: auto;
         display: inline-block;
     }
+    #icon_color{
+        color: orange;
+    }
+
 </style>
 </head>
 
@@ -62,15 +70,15 @@
 
 <nav class="navbar navbar-default">
     <div class="navbar-header">
-        <a class="navbar-brand">login</a>
+        <a class="navbar-brand" id="link3">Reservation</a>
     </div>
     <div class="container-fluid">
         <div>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-home"></span>&nbsp;이용안내</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;로그인</a></li>
-                <li><a href="http://localhost:63342/da_capo/Checking_Reservation_of_student.html">
-                    <span class="glyphicon glyphicon-book"></span>&nbsp;예약확인/예약취소&nbsp;</a></li>
+                <li><a href="6_Information.html"><span class="glyphicon glyphicon-home" id="icon_color"></span>&nbsp;이용안내</a></li>
+                <li><a href="3_Login.html"><span class="glyphicon glyphicon-off"id="icon_color"></span>&nbsp;로그인</a></li>
+                <li><a href="10_Selectreservation.html">
+                    <span class="glyphicon glyphicon-book" id="icon_color"></span>&nbsp;예약확인/예약취소&nbsp;</a></li>
             </ul>
         </div>
     </div>
@@ -81,18 +89,22 @@
     <form action="cgi-bin/formsample.cgi" method="post">
         <p> I D : <input type="text" name="userid" id="userid" required  placeholder="아이디를 입력하세요"> </p>
         <p> 비밀번호 : <input type="password" name="userpasswd" id="userpasswd" placeholder="비밀번호를 입력하세요" required></p>
+        <div class="divider"></div>
     </form>
 
     <div class="container" align="center" >
         <button type="button" class="btn btn-danger"><a href="4_Findpassword.html"> 비 밀 번 호 찾 기 ></a></button>
         <div class="divider"></div>
-        <button type="button" class="btn btn-danger"><a href="6_Information.html"> 로 그 인 !</a></button>
+        <button type="button" class="btn btn-danger"><a href="6_Information.html"> 로 그 인 ></a></button>
         <div class="divider"></div>
-        <button type="button" class="btn btn-danger"><a href="1_Joinpage.html"> 회 원 가 입 </a></button>
+        <button type="button" class="btn btn-danger"><a href="1_Joinpage.html"> 회 원 가 입 ></a></button>
     </div>
 </div>
 
-<footer>Copyright (c) 2015 da_capo </footer>
+<footer id="footer">
+    <div class="pull-left" >&nbsp;&nbsp;가천대학교 산업경영공학과</div>
+    <div class="pull-right">Copyright (c) da_capo&nbsp;&nbsp;</div>
+</footer>
 
 </body>
 </html>

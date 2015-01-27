@@ -24,6 +24,10 @@
         table,th,td{
             border: 1px solid grey;
             text-align: center;
+            height: 20px;
+        }
+        tr{
+            height: 50%;
         }
         th{
             background-color : #f8ffff;
@@ -38,7 +42,8 @@
             background-color: #e6eaaa;
             text-align: right;
             margin: auto;
-            padding: 10px;
+            padding: 5px;
+            height: 25px;
         }
         h2{
             text-align :center;
@@ -52,6 +57,9 @@
             height:auto;
             text-align:center;
         }
+        #icon_color{
+            color: orange;
+        }
     </style>
 </head>
 
@@ -64,7 +72,7 @@
     <div class="container-fluid">
         <div>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;로그아웃&nbsp;</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-user" id="icon_color"></span>&nbsp;로그아웃&nbsp;</a></li>
             </ul>
         </div>
     </div>
@@ -139,7 +147,10 @@
 </div>
 
 <span style="line-height: 20px"><br></span>
-<footer>Copyright (c) 2015 da_capo </footer>
+<footer id="footer">
+    <div class="pull-left" >&nbsp;&nbsp;가천대학교 산업경영공학과</div>
+    <div class="pull-right">Copyright (c) da_capo&nbsp;&nbsp;</div>
+</footer>
 
 </body>
 </html>
