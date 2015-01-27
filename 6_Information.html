@@ -17,23 +17,6 @@
          margin: 40px auto;
          vertical-align:middle;
      }
-     header{height:100px;  }
-
-     footer{
-         font-size: 80%;
-         background-color: #e6eaaa;
-         text-align: right;
-         margin: auto;
-         padding: 5px;
-         position: relative;
-         height: 25px;
-     }
-    .btn{
-        background-color: #ff8868;
-        width:30%;
-        text-align:center
-    ;
-    }
     h3{
         margin-top: 0;
         padding: 5px;
@@ -54,6 +37,45 @@
           background-color: #e6eaaa;
           font-size: auto;
       }
+     #footer {
+         font-size: 70%;
+         background-color: #e6eaaa;
+         font-weight: bold;
+         text-align: right;
+         margin: auto;
+         padding: 5px;
+         position: relative;
+         height: 20px;
+     }
+     .btn{
+         background-color: #ff8868;
+         width:13%;
+         font-size: 18px;
+         font-weight: bold;
+         height:auto;
+         text-align:center;
+     }
+     .navbar {
+         background-color: #e6eaaa;
+         font-size: auto;
+     }
+     .divider{
+         width: 50px;
+         height: auto;
+         display: inline-block;
+     }
+     #link3{
+         color: white;
+     }
+     #icon_color{
+         color: orange;
+     }
+     p{
+         position: relative;
+         text-align: center;
+         font-size: 150%;
+     }
+
 </style>
 </head>
 
@@ -61,22 +83,23 @@
 
 <nav class="navbar navbar-default">
     <div class="navbar-header">
-        <a class="navbar-brand">강의실 예약 시스템</a>
+        <a class="navbar-brand" id="link3">Information</a>
     </div>
     <div class="container-fluid">
         <div>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-home"></span>&nbsp;이용안내</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;로그아웃</a></li>
-                <li><a href="http://localhost:63342/da_capo/Checking_Reservation_of_student.html">
-                    <span class="glyphicon glyphicon-book"></span>&nbsp;예약확인/예약취소&nbsp;</a></li>
+                <li><a href="6_Information.html"><span class="glyphicon glyphicon-home" id="icon_color"></span>&nbsp;이용안내</a></li>
+                <li><a href="3_Login.html"><span class="glyphicon glyphicon-off"id="icon_color"></span>&nbsp;로그인</a></li>
+                <li><a href="10_Selectreservation.html">
+                    <span class="glyphicon glyphicon-book" id="icon_color"></span>&nbsp;예약확인/예약취소&nbsp;</a></li>
             </ul>
         </div>
     </div>
 </nav>
 
+<span style="line-height: 100px;"><br></span>
 <div id="main">
-    <h3 id="break"> 이 용 안 내</h3>
+    <h3 id="break">* 이 용 안 내</h3>
     <alticle>
         <b>이용 가능 대상</b> : 산업경영공학과 학생<br>
         <b>이용 가능 강의실</b> : 504호 - 개인 과제 및 쉴 공간
@@ -88,7 +111,7 @@
                   예약은 한 날짜의 한 번만 가능<br>
     </alticle>
 
-    <h3 id="break"> 유 의 사 항</h3>
+    <h3 id="break">* 유 의 사 항</h3>
     <alticle>
         경고 3회 누적시 평생 사용 불가 <br>
         (경고 예시 : 인원 숫자 불일치, 강의실 더럽게 사용)<br>
@@ -98,15 +121,16 @@
     </alticle>
 </div>
 
+<span style="line-height: 100px;"><br></span>
 <div class="container" align="center">
-    <button type="button" class="btn btn-danger"> <a href="7_504table.html"> 예 약 시 작 </a></button>
+    <button type="button" class="btn btn-danger"> <a href="7_504table.html" style="color: white">예약시작</a></button>
 </div>
 
-<span>
+<span style="line-height: 30px;"><br></span>
 <footer id="footer">
     <div class="pull-left" >&nbsp;&nbsp;가천대학교 산업경영공학과</div>
     <div class="pull-right">Copyright (c) da_capo&nbsp;&nbsp;</div>
 </footer>
-</span>
+
 </body>
 </html>

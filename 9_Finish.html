@@ -13,9 +13,6 @@
             background-color: #e6eaaa;
             font-size: auto;
         }
-        .navbar-right{
-            font-color:white ;
-        }
         table{
             font-size : 18px;
             width: 85%;
@@ -34,7 +31,7 @@
             text-align :center;
             font-weight: bold;
         }
-        p{
+        p {
             text-align: center;
         }
         .btn{
@@ -45,15 +42,21 @@
             height:auto;
             text-align:center;
         }
-        footer{
-            font-size: 80%;
+        #link3{
+            color: white;
+        }
+        #footer {
+            font-size: 70%;
             background-color: #e6eaaa;
+            font-weight: bold;
             text-align: right;
             margin: auto;
             padding: 5px;
             position: relative;
-            height: 25px;
-
+            height: 20px;
+        }
+        #icon_color{
+            color: orange;
         }
     </style>
 </head>
@@ -61,12 +64,15 @@
 
 <nav class="navbar navbar-default">
     <div class="navbar-header">
-        <a class="navbar-brand">Information Reservation</a>
+        <a class="navbar-brand" id="link3">FinishReservation</a>
     </div>
     <div class="container-fluid">
         <div>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;로그아웃&nbsp;</a></li>
+                <li><a href="6_Information.html"><span class="glyphicon glyphicon-home" id="icon_color"></span>&nbsp;이용안내</a></li>
+                <li><a href="3_Login.html"><span class="glyphicon glyphicon-off"id="icon_color"></span>&nbsp;로그인</a></li>
+                <li><a href="10_Selectreservation.html">
+                    <span class="glyphicon glyphicon-book" id="icon_color"></span>&nbsp;예약확인/예약취소&nbsp;</a></li>
             </ul>
         </div>
     </div>
@@ -111,7 +117,7 @@
 
 <span style="line-height: 10px"><br></span>
 <div class="container" align="center">
-    <button type="button" class="btn btn-danger">초기화면으로 돌아가기</button>
+    <button type="button" class="btn btn-danger"><a href="6_Information.html" style="color: white">초기화면으로 돌아가기</a></button>
 </div>
 
 <span style="line-height: 40px"><br></span>

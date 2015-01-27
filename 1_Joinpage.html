@@ -10,32 +10,54 @@
 
 
     <style>
-
-    form{
-        text-align: right;
-        margin : auto;
-        font-size : 150%;
-        position : relative;
-        right : 500px;
-    }
-    footer{
-        font-size: 80%;
-        background-color: #e6eaaa;
-        text-align: right;
-        margin: auto;
-        padding: 5px;
-        position: relative;
-        height: 25px;
-    }
-    .btn{
-        background-color: #ff8868;
-        width:30%
-        text-align:center;
-    }
-    .navbar{
-        background-color: #e6eaaa;
-        font-size: auto;
-    }
+        .navbar{
+            background-color: #e6eaaa;
+            font-size: auto;
+            color: white;
+        }
+        p{
+            text-align: center;
+            font-size: 20px;
+        }
+        .btn{
+            background-color: #ff8868;
+            width:10%;
+            font-size: 18px;
+            font-weight: bold;
+            height:auto;
+            text-align:center;
+        }
+        #footer {
+            font-size: 70%;
+            background-color: #e6eaaa;
+            font-weight: bold;
+            text-align: right;
+            margin: auto;
+            padding: 5px;
+            position: relative;
+            height: 20px;
+        }
+        #link3{
+            color: white;
+        }
+        #icon_color{
+            color: orange;
+        }
+        .glyphicon-user{
+            line-height: 50px;
+            font-size: 35px;
+            width: 1em;
+            display: block;
+            left: 20%;
+            margin:auto;
+            color: deepskyblue;
+        }
+        #userid,#userpassword,#useremail,#username{
+            width:520px;
+            text-align: center;
+            border-radius: 20px;
+            border: 1px solid deepskyblue;
+        }
 </style>
 </head>
 
@@ -57,19 +79,26 @@
 </nav>
 
 
+<span style="line-height: 100px;"><br></span>
 <form action="cgi-bin/formsample.cgi" method="post">
-    <p> I D : <input type="text" name="userid" id="userid" required></p>
-    <p> 이름 : <input type="text" name="username" id="username" required> </p>
-    <p> email : <input type="email" name="useremail" id="useremail" required></p>
-    <p> 비밀번호 : <input type="password" name="userpasswd" id="userpasswd "required> </p>
-    <p> 비밀번호 확인 : <input type="password" name="checkpasswd" id="checkpasswd" required> </p>
+    <span class="glyphicon glyphicon-user"></span>
+    <p>&emsp;&emsp;&emsp;&emsp;ID : &nbsp;<input type="text" name="userid" id="userid" required  placeholder="Enter ID"> </p>
+    <p>&emsp;&emsp;&emsp;Name : &nbsp;<input type="text" name="username" id="username" required  placeholder="Enter name"> </p>
+    <p>&emsp;Password : &nbsp;<input type="password" name="userpassword" id="userpassword" required  placeholder="Enter Password"> </p>
+    <p>&emsp;Password : &nbsp;<input type="password" name="userpassword" id="userpassword" required  placeholder="Enter Password one more"> </p>
+    <p>&emsp;&emsp;E-mail : &nbsp;<input type="text" name="useremail" id="useremail" placeholder="Enter Email" required></p>
+
 </form>
 
+
+<span style="line-height: 150px;"><br></span>
 <div class="container" align="center">
-    <button type="button" class="btn btn-danger"><a href="2_Joinpage.html"> 회 원 가 입</a></button>
+    <button type="button" class="btn btn-danger"><a href="2_Joinpage.html" style="color:white">회원가입</a></button>
 </div>
 
 
+
+<span style="line-height: 20px;"><br></span>
 <footer id="footer">
     <div class="pull-left" >&nbsp;&nbsp;가천대학교 산업경영공학과</div>
     <div class="pull-right">Copyright (c) da_capo&nbsp;&nbsp;</div>
