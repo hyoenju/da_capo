@@ -79,39 +79,45 @@
         });
     </script>
     <style>
-        header{height:100px;}
         .navbar {
             background-color: #e6eaaa;
             font-size: auto;
         }
-
         #main{
             font-size: 20px;
             padding-top: 100px;
-            padding-left: 500px;
+            padding-left: 400px;
             padding-bottom: 150px;
             vertical-align:middle;
         }
-        footer{
-            font-size: 80%;
+        .btn{
+            background-color: #ff8868;
+            width:15%;
+            font-size: 18px;
+            font-weight: bold;
+            height:auto;
+            text-align:center;
+        }
+
+        #link3{
+            color: white;
+        }
+        #footer {
+            font-size: 70%;
             background-color: #e6eaaa;
+            font-weight: bold;
             text-align: right;
             margin: auto;
             padding: 5px;
             position: relative;
-            height: 25px;
-
+            height: 20px;
         }
         p{
             text-align: left;
             font-size: 18px;
             font-weight: bold;
         }
-        .btn{
-            background-color: #ff8868;
-            width:20%;
-            text-align:center;
-        }
+
         #icon_color{
             color: orange;
         }
@@ -121,7 +127,7 @@
 
 <nav class="navbar navbar-default">
     <div class="navbar-header">
-        <a class="navbar-brand" id="link3">Reservation</a>
+        <a class="navbar-brand" id="link3">Studentmember</a>
     </div>
     <div class="container-fluid">
         <div>
@@ -157,9 +163,11 @@
             <input type="text" name="reason" id="reason" placeholder="기타 사유를 입력하세요"></p>
     </form>
 </div>
+
 <div class="container" align="center">
-    <button type="button" class="btn btn-danger"><a href="9_Finish.html"> 예 약 완 료 ></a></button>
+    <button type="button" class="btn btn-danger"><a href="9_Finish.html" style="color: white;">예약완료</a></button>
 </div>
+
 <footer id="footer">
     <div class="pull-left" >&nbsp;&nbsp;가천대학교 산업경영공학과</div>
     <div class="pull-right">Copyright (c) da_capo&nbsp;&nbsp;</div>

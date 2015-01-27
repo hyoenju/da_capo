@@ -31,24 +31,33 @@
             text-align :center;
             font-weight: bold;
         }
+        #icon_color{
+            color: orange;
+        }
+
         .btn{
             background-color: #ff8868;
-            width:10%;
+            width:15%;
             font-size: 18px;
             font-weight: bold;
             height:auto;
             text-align:center;
         }
-        footer{
-            font-size: 80%;
+
+        #link3{
+            color: white;
+        }
+        #footer {
+            font-size: 70%;
             background-color: #e6eaaa;
+            font-weight: bold;
             text-align: right;
             margin: auto;
             padding: 5px;
             position: relative;
-            height: 25px;
-
+            height: 20px;
         }
+
         .divider{
             width: 300px;
             height: auto;
@@ -60,12 +69,15 @@
 
 <nav class="navbar navbar-default">
     <div class="navbar-header">
-        <a class="navbar-brand">Checking Reservation</a>
+        <a class="navbar-brand" id="link3">Cancel</a>
     </div>
     <div class="container-fluid">
         <div>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;로그아웃&nbsp;</a></li>
+                <li><a href="6_Information.html"><span class="glyphicon glyphicon-home" id="icon_color"></span>&nbsp;이용안내</a></li>
+                <li><a href="3_Login.html"><span class="glyphicon glyphicon-off"id="icon_color"></span>&nbsp;로그인</a></li>
+                <li><a href="10_Selectreservation.html">
+                    <span class="glyphicon glyphicon-book" id="icon_color"></span>&nbsp;예약확인/예약취소&nbsp;</a></li>
             </ul>
         </div>
     </div>
@@ -110,7 +122,7 @@
 <div class="container" align="center">
     <button type="button" class="btn btn-danger" onclick="self.close()">예약확인</button>
     <div class="divider"></div>
-    <a class="btn btn-danger" href="http://localhost:63342/da_capo/Reservationcancel.html" role="button">예약취소</a>
+    <button type="button" class="btn btn-danger"><a href="11_Cancel.html" style="color:white;">예약취소</a></button>
 </div>
 
 <span style="line-height: 20px"><br></span>
@@ -119,12 +131,5 @@
     <div class="pull-right">Copyright (c) da_capo&nbsp;&nbsp;</div>
 </footer>
 
-<p id="demo"></p>
-
-<script>
-    function changePart() {
-        location.href="12_Cancel.html"
-    }
-</script>
 </body>
 </html>
