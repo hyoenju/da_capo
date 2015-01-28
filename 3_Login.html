@@ -66,15 +66,35 @@
         font-size: 35px;
         width: 1em;
         display: block;
-        left: 20%;
+        left: 40%;
         margin:auto;
         color: deepskyblue;
     }
+    .checkbox{
+        left:40%;
+    }
+    #middle{
+        padding-top: 10px ;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: #e7e7e7;
+        display: inline-block;
+        margin-left: 350px;
+        border-radius: 15px;
+    }
+    #middle hr {
+        border: none;
+        height: 1.5px;
+        color: white;
+        background-color: white; }
+
 </style>
 
 </head>
 
 <body>
+
 <nav class="navbar navbar-default">
     <div class="navbar-header">
         <a class="navbar-brand" id="link3">Login</a>
@@ -86,30 +106,59 @@
                 <li><a href="3_Login.html"><span class="glyphicon glyphicon-off"id="icon_color"></span>&nbsp;로그인</a></li>
                 <li><a href="10_Selectreservation.html">
                     <span class="glyphicon glyphicon-book" id="icon_color"></span>&nbsp;예약확인/예약취소&nbsp;</a></li>
+                <a href="#" data-toggle="modal" data-target="#basicModal" style="color: red">불 허</a>
+                <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> X </button>
+                                <h4 class="modal-title" id="myModalLabel">승인상황</h4>
+                            </div>
+                            <div class="modal-body">
+                                <h3>허가 / 불허</h3>
+                                <table align="center" style="margin-left: 40px">
+                                    <tr>
+                                        <th>승인상황</th>
+                                        <td>불 허</td>
+                                    </tr>
+                                    <tr>
+                                        <th>승인이유</th>
+                                        <td>예약하신 시간에 세미나가 진행됩니다.</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </ul>
         </div>
     </div>
 </nav>
 
-
 <span style="line-height: 150px"><br></span>
-<div id="main">
-    <span class="glyphicon glyphicon-user"></span>
-    <form action="cgi-bin/formsample.cgi" method="post">
-        <p>&emsp;&emsp;&emsp;ID : &nbsp;<input type="text" name="userid" id="userid" required  placeholder="Enter ID"> </p>
-        <p>&emsp;E-mail : &nbsp;<input type="password" name="userpasswd" id="userpassword" placeholder="Enter Password" required></p>
-    </form>
-</div>
+<div id="middle">
+    <div id="main">
 
-<div class="form-group" align="center">
-    <div class="col-sm-offset-2 col-sm-10">
-        <div class="checkbox">
-            <label><input type="checkbox">Remember me</label>
+        <span class="glyphicon glyphicon-user"></span>
+        <hr>
+        <form action="cgi-bin/formsample.cgi" method="post">
+            <p>&emsp;&emsp;ID : &nbsp;<input type="text" name="userid" id="userid" required  placeholder="Enter ID"> </p>
+            <p>E-mail : &nbsp;<input type="password" name="userpasswd" id="userpassword" placeholder="Enter Password" required></p>
+        </form>
+    </div>
+
+    <div class="form-group" align="center">
+        <div class="col-sm-offset-2 col-sm-10">
+            <div class="checkbox">
+                <label><input type="checkbox">Remember me</label>
+            </div>
         </div>
     </div>
 </div>
-
-<span style="line-height: 200px"><br></span>
+<span style="line-height: 300px"><br></span>
 <div class="container" align="center" >
     <button type="button" class="btn btn-danger"><a href="4_Findpassword.html" style="color: white;">비밀번호 찾기</a></button>
     <div class="divider"></div>
@@ -118,7 +167,7 @@
     <button type="button" class="btn btn-danger"><a href="1_Joinpage.html" style="color: white;">회원가입</a></button>
 </div>
 
-<span style="line-height: 50px"><br></span>
+<span style="line-height: 80px"><br></span>
 <footer id="footer">
     <div class="pull-left" >&nbsp;&nbsp;가천대학교 산업경영공학과</div>
     <div class="pull-right">Copyright (c) da_capo&nbsp;&nbsp;</div>

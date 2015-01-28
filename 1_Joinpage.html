@@ -48,7 +48,7 @@
             font-size: 35px;
             width: 1em;
             display: block;
-            left: 20%;
+            left: 45%;
             margin:auto;
             color: deepskyblue;
         }
@@ -65,9 +65,17 @@
             padding-right: 10px;
             background-color: #e7e7e7;
             display: inline-block;
-            margin-left: 350px;
+            margin-left: 370px;
+            margin-right: 370px;
             border-radius: 15px;
         }
+
+        #box hr {
+            border: none;
+            height: 1.5px;
+            color: white;
+            background-color: white; }
+
 </style>
 </head>
 
@@ -87,28 +95,37 @@
         </div>
     </div>
 </nav>
-<span style="line-height: 100px;"><br></span>
+
+<span style="line-height: 50px;"><br></span>
+
 
 <div id="box">
-    <form action="cgi-bin/formsample.cgi" method="post">
-        <span class="glyphicon glyphicon-user"></span>
-        <p>&emsp;&emsp;&emsp;&emsp;ID : &nbsp;<input type="text" name="userid" id="userid" required  placeholder="Enter ID"> </p>
-        <p>&emsp;&emsp;&emsp;Name : &nbsp;<input type="text" name="username" id="username" required  placeholder="Enter name"> </p>
-        <p>&emsp;Password : &nbsp;<input type="password" name="userpassword" id="userpassword" required  placeholder="Enter Password"> </p>
-        <p>&emsp;Password : &nbsp;<input type="password" name="userpassword" id="userpassword" required  placeholder="Enter Password one more"> </p>
-        <p>&emsp;&emsp;E-mail : &nbsp;<input type="text" name="useremail" id="useremail" placeholder="Enter Email" required></p>
+    <hr class="soften" />
+
+    <form action="cgi-bin/formsample.cgi" method="post" >
+        <span class="glyphicon glyphicon-user" style=""></span>
+        <p style="text-align: left">ID :
+            <br><input type="text" name="userid" id="userid" required  placeholder="Enter ID" style="width:500px"> </p>
+        <p>Name :
+            <br>&nbsp;<input type="text" name="username" id="username" required  placeholder="Enter name" style="width:500px"> </p>
+        <p>Password :
+            <br><input type="password" name="userpassword" id="userpassword" required  placeholder="Enter Password" style="width:500px"> </p>
+        <p>Password :
+            <br><input type="password" name="userpassword" id="userpassword" required  placeholder="Enter Password one more" style="width:500px"> </p>
+        <p>E-mail :
+            <br><input type="text" name="useremail" id="useremail" placeholder="Enter Email" required style="width:500px"></p>
     </form>
 </div>
 
 
-<span style="line-height: 150px;"><br></span>
+<span style="line-height: 110px;"><br></span>
 <div class="container" align="center">
     <button type="button" class="btn btn-danger"><a href="2_Joinpage.html" style="color:white">회원가입</a></button>
 </div>
 
 
 
-<span style="line-height: 20px;"><br></span>
+<span style="line-height: 10px;"><br></span>
 <footer id="footer">
     <div class="pull-left" >&nbsp;&nbsp;가천대학교 산업경영공학과</div>
     <div class="pull-right">Copyright (c) da_capo&nbsp;&nbsp;</div>
