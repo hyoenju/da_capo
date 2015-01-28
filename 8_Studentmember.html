@@ -77,16 +77,32 @@
                         }
                     });
         });
+        x=0;
+        $(document).ready(function() {
+            $("").scroll(function () {
+                $("span").text(x += 1);
+            });
+        });
+
     </script>
     <style>
+        #information{
+            color:red ;
+            font-weight: bold;
+            font-size: 25px;
+            padding-top: 100px;
+            padding-left: 400px;
+            padding-bottom: 20px;
+            vertical-align:middle;
+        }
         .navbar {
             background-color: #e6eaaa;
             font-size: auto;
         }
         #main{
-            font-size: 20px;
-            padding-top: 100px;
-            padding-left: 400px;
+            font-weight: bold;
+            font-size: 25px;
+            padding-left: 430px;
             padding-bottom: 95px;
             vertical-align:middle;
         }
@@ -98,7 +114,6 @@
             height:auto;
             text-align:center;
         }
-
         #link3{
             color: white;
         }
@@ -117,7 +132,6 @@
             font-size: 18px;
             font-weight: bold;
         }
-
         #icon_color{
             color: orange;
         }
@@ -142,16 +156,15 @@
 </nav>
 
 
-<div id="main">
+<p id="information">* 세부사항을 입력해 주세요 *</p>
 
-    <ul><li style="font-weight: bold; font-size: 25px;">세 부 사 항 입 력</li></ul><br>
+<div id="main">
     <p>예약자 학번 :  201433298 (아이디)</p>
     <p>예약자 이름 : 이 현 주</p>
     <p>예약 시간 : 13 : 00 ~ 15 : 00</p>
     <form action="cgi-bin/formsample.cgi" method="post" style="font-size: medium">
-        <p class="ui-widget" style="width:50%">
-            <label for="tags">동반 사용자 : </label>
-            <input id="tags" size="50">
+        <p class="ui-widget" style="width:50%;">
+            <p>동반사용자 <input id="tags" size="44" style="overflow:scroll;"></p>
         </p>
         <p>사용 목적 :
             <select>
@@ -161,7 +174,8 @@
                 <option value="other">기타</option>
             </select>
             <br>
-            <input type="textarea" name="reason" id="reason" placeholder="기타 사유를 입력하세요" style="width:565px; height: 70px"></p>
+        </p>
+        <p style="padding-left: 90px"><input type="textarea" name="reason" id="reason" placeholder="기타 사유를 입력하세요" style="width:500px; height: 70px"></p>
     </form>
 </div>
 
