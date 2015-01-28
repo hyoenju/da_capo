@@ -65,11 +65,17 @@
         }
     </style>
 </head>
+<script>
+    function popupFunction(){
+        window.open("2_", "_blank", "toolbar=yes, scrollbars=yes, resizable=yes, top=500, left=500, width=400, height=400");
+    }
+</script>
+
 <body onhashchange="myFunction()">
 
 <nav class="navbar navbar-default">
     <div class="navbar-header">
-        <a class="navbar-brand" id="link3">Cancel</a>
+        <a class="navbar-brand" id="link3">Selectreservation</a>
     </div>
     <div class="container-fluid">
         <div>
@@ -111,7 +117,7 @@
     </tr>
     <tr>
         <th>승인상태</th>
-        <td><a href="12_Cancel.html" style="color: red">취소</a></td>
+        <td><a onclick="popupFunction()" style="color: red">취소</a></td>
     </tr>
 </table>
 

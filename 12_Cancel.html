@@ -19,10 +19,6 @@
     </script>
     <title></title>
     <style>
-        .navbar{
-            background-color: #e6eaaa;
-            font-size: auto;
-        }
         table{
             font-size : 18px;
             width: 85%;
@@ -31,24 +27,18 @@
         table,th,td{
             border: 1px solid grey;
             padding: 10px;
-            text-align: center;
-            width: 900px;
+            width: 400px;
         }
-
         th{
             background-color : #f8ffff;
             font-weight: bold;
-            width: 700px;
+            text-align: center;
+            width: 200px;
         }
         h2{
             text-align :center;
             font-weight: bold;
         }
-
-        #icon_color{
-            color: orange;
-        }
-
         .btn{
             background-color: #ff8868;
             width:15%;
@@ -57,43 +47,10 @@
             height:auto;
             text-align:center;
         }
-
-        #link3{
-            color: white;
-        }
-        #footer {
-            font-size: 70%;
-            background-color: #e6eaaa;
-            font-weight: bold;
-            text-align: right;
-            margin: auto;
-            padding: 5px;
-            position: relative;
-            height: 20px;
-        }
-
     </style>
 </head>
 <body>
-
-<nav class="navbar navbar-default">
-    <div class="navbar-header">
-        <a class="navbar-brand" id="link3">Cancel</a>
-    </div>
-    <div class="container-fluid">
-        <div>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="6_Information.html"><span class="glyphicon glyphicon-home" id="icon_color"></span>&nbsp;이용안내</a></li>
-                <li><a href="3_Login.html"><span class="glyphicon glyphicon-off"id="icon_color"></span>&nbsp;로그인</a></li>
-                <li><a href="10_Selectreservation.html">
-                    <span class="glyphicon glyphicon-book" id="icon_color"></span>&nbsp;예약확인/예약취소&nbsp;</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<span style="line-height: 200px"><br></span>
-<table align="center">
+<table>
     <tr>
         <th>승인상태</th>
         <td>취소</td>
@@ -104,16 +61,9 @@
     </tr>
 </table>
 
-<span style="line-height: 200px"><br></span>
 <div class="container" align="center">
     <button type="button" class="btn btn-danger" onclick="window.open('', '_self', ''); window.close();">확인</button>
 </div>
-
-<span style="line-height: 50px"><br></span>
-<footer id="footer">
-    <div class="pull-left" >&nbsp;&nbsp;가천대학교 산업경영공학과</div>
-    <div class="pull-right">Copyright (c) da_capo&nbsp;&nbsp;</div>
-</footer>
 
 </body>
 </html>
