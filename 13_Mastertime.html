@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+    <script type="text/javascript">
+        function showmap() {
+            if(document.all.spot.style.visibility=="hidden") {
+                document.all.spot.style.visibility="visible";
+                return false;
+            }
+            if(document.all.spot.style.visibility=="visible") {
+                document.all.spot.style.visibility="hidden";
+                return false;
+            }
+        }
+        function popimage(imagesrc,winwidth,winheight){
+            var look='width='+winwidth+',height='+winheight+','
+            popwin=window.open("","",look)
+            popwin.document.open()
+            popwin.document.write('<title>Image Window</title><body topmargin=0 leftmargin=0><img style=cursor:hand; onclick="self.close()" src="'+imagesrc+'"></body>')
+            popwin.document.close()
+        }
+    </script>
+    <title>504_timetable</title>
+
+    <style>
+        .btn{
+            background-color: #ff8868;
+            width:15%;
+            font-size: 18px;
+            font-weight: bold;
+            height:auto;
+            text-align:center;
+        }
+        li{
+            display: inline;
+        }
+        .navbar{
+            background-color: #e6eaaa;
+        }
+        #container{
+            margin: auto;
+            width: 85%;
+            height: 70%;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -moz-box-orient: horizontal;
+            -moz-direction: reverse;
+            -webkit-box-direction: horizontal;
+            -webkit-direction: reverse;
+            -ms-flex-direction: row-reverse;
+            -webkit-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+        }
+        #room{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            font-size: 18px;
+        }
+        table{
+            font-size : 18px;
+            border-collapse: collapse;
+        }
+        table,th,td{
+            border: 1px solid lavenderblush;
+            padding: 10px;
+            text-align: center;
+        }
+        th{
+            background-color : #f8ffff;
+            font-weight: bold;
+        }
+        colgroup{
+            width:20%;
+            background-color : #f8ffff;
+            font-weight: bold;
+        }
+        p{
+            text-align: center;
+        }
+        .divider{
+            padding:15px;
+            background-color: #FFFFFF;
+        }
+        #icon_color {
+            color: orange;
+        }
+        #link3{
+            font-size: 30px;
+            color: white;
+        }
+        #footer {
+            font-size: 70%;
+            background-color: #e6eaaa;
+            font-weight: bold;
+            text-align: right;
+            margin: auto;
+            padding: 5px;
+            position: relative;
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="navbar-header">
+        <a class="dropdown-toggle" data-toggle="dropdown" id="link3" href="#">&nbsp;Master<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="13_Mastertime.html">시간관리</a></li>
+            <li><a href="#">신입생관리</a></li>
+            <li><a href="13_Master.html">예약확인상황</a></li>
+        </ul>
+    </div>
+
+    <div class="container-fluid">
+        <div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-retweet" id="icon_color"></span>&nbsp;초기화&nbsp;</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-user" id="icon_color"></span>&nbsp;로그아웃&nbsp;</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<span style="line-height: 10px"><br></span>
+<div id="container">
+    <ul id="room" style="background-color: lavenderblush; width: 50px; height: 360px; text-align: center;">
+        <div class="divider"></div>
+        <li><a href="7_504table.html" style="color:palevioletred;" onClick="popimage('pikicast162764400.jpg',500,750);"><br>5<br>0<br>4<br>호<br><br></a></a></li>
+        <div class="divider"></div>
+        <li><a href="7_519table.html" style="color:palevioletred;" onClick="popimage('pikicast-728207871.jpg',580,383);"><br>5<br>1<br>9<br>호</a></li>
+    </ul>
+    <table class = table >
+        <thead>
+        <tr><th></th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th></tr>
+        </thead>
+        <tbody >
+        <colgroup span="1" class="time"></colgroup>
+        <tr><td>09:00~10:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>10:00~11:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>11:00~12:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>12:00~13:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>13:00~14:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>14:00~15:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>15:00~16:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>16:00~17:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>17:00~18:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>18:00~19:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>19:00~20:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>20:00~21:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>21:00~22:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="container" align="center">
+    <button type="button" class="btn btn-danger" ><a href="9_Finish.html" style="color: white;">확인</a></button>
+</div>
+
+<footer id="footer">
+    <div class="pull-left" >&nbsp;&nbsp;가천대학교 산업경영공학과</div>
+    <div class="pull-right">Copyright (c) da_capo&nbsp;&nbsp;</div>
+</footer>
+
+</body>
+</html>
